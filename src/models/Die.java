@@ -3,7 +3,7 @@ package models;
 import java.util.Random;
 
 public class Die {
-    private int eyes = 0;
+    private int eyes;
     private final Random random = new Random();
 
     /**
@@ -15,9 +15,14 @@ public class Die {
     }
 
     public Die() {
+        this.eyes = 0;
     }
 
     public void roll() {
-        //TODO: implement roll method.
+        this.eyes = random.nextInt(1,7);
+    }
+
+    public int getRoll() {
+        return eyes;
     }
 }

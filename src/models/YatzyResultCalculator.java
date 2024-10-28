@@ -4,13 +4,19 @@ package models;
  * Used to calculate the score of throws with 5 dice
  */
 public class YatzyResultCalculator {
+    private final Die[] dice;
+    private final int[] sum = new int[6];
 
     /**
      *
      * @param dice
+     * Calculate score of throws with 5 dice.
      */
     public YatzyResultCalculator(Die[] dice) {
-        //TODO: implement YatzyResultCalculator constructor.
+        this.dice = dice;
+        for (Die die : dice) {
+            sum[die.getRoll() - 1]++;
+        }
     }
 
     /**
@@ -19,52 +25,101 @@ public class YatzyResultCalculator {
      * @return the score for specified eye value
      */
     public int upperSectionScore(int eyes) {
-        //TODO: Implement upperSectionScore method.
-        return 0;
+        return sum[eyes - 1] * eyes;
     }
 
     public int onePairScore() {
-        //TODO: implement onePairScore method.
+        for (int i = 5; i >= 0; i--) {
+            if (sum[i] >= 2) {
+                return (i + 1) * 2;
+            }
+        }
         return 0;
     }
 
     public int twoPairScore() {
-        //TODO: implement twoPairScore method.
+        int twoPairScore = 0;
+        int pairCount = 0;
+        for (int i = 5; i >= 0; i--) {
+            if (sum[i] >= 2) {
+                twoPairScore += (i + 1) * 2;
+                pairCount++;
+            }
+        }
+        if (pairCount == 2) {
+            return twoPairScore;
+        }
         return 0;
     }
 
     public int threeOfAKindScore() {
-        //TODO: implement threeOfAKindScore method.
+        for (int i = 5; i >= 0; i--) {
+            if (sum[i] >= 3) {
+                return (i + 1) * 3;
+            }
+        }
         return 0;
     }
 
     public int fourOfAKindScore() {
-        //TODO: implement fourOfAKindScore method.
+        for (int i = 5; i >= 0; i--) {
+            if (sum[i] >= 4) {
+                return (i + 1) * 4;
+            }
+        }
         return 0;
     }
 
     public int smallStraightScore() {
-        //TODO: implement smallStraightScore method.
-        return 0;
+        for (int i = 0; i < 5; i++) {
+            if (sum[i] != 1) {
+                return 0;
+            }
+        }
+        return 15;
     }
 
     public int largeStraightScore() {
-        //TODO: implement largeStraightScore method.
-        return 0;
+        for (int i = 5; i > 0; i--) {
+            if (sum[i] != 1) {
+                return 0;
+            }
+        }
+        return 20;
     }
 
     public int fullHouseScore() {
-        //TODO: implement fullHouseScore method.
+        int score = 0;
+        int pairCount = 0;
+        for (int i = 0; i < 6; i++) {
+            if (sum[i] == 3) {
+                score += (i + 1) * 3;
+                pairCount++;
+            } else if (sum[i] == 2) {
+                score += (i + 1) * 2;
+                pairCount++;
+            }
+        }
+        if (pairCount == 2) {
+            return score;
+        }
         return 0;
     }
 
     public int chanceScore() {
-        //TODO: implement chanceScore method.
-        return 0;
+        int result = 0;
+        for (Die die : dice) {
+            result += die.getRoll();
+        }
+        return result;
     }
 
     public int yatzyScore() {
-        //TODO: implement yatzyScore method.
+        for (int i = 5; i >= 0; i--) {
+            if (sum[i] == 5) {
+                return 50;
+            }
+        }
         return 0;
     }
 }

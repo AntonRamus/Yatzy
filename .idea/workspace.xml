@@ -1,13 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Yatzy:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7bed1782-295b-4529-b5e0-ce21edd298f8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/junit_jupiter_api.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/openjfx_javafx_controls.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Yatzy.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Yatzy.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/gui/YatzyGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/YatzyGui.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/Die.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Die.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/RaffleCup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/RaffleCup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/YatzyResultCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/YatzyResultCalculator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,21 +34,24 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "benn-christensen"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;benn-christensen&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/benn-christensen/Yatzy.git",
-    "accountId": "72e6f8f1-2ad2-41dc-b9cc-aa352c3736f3"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/AntonRamus/Yatzy&quot;,
+    &quot;accountId&quot;: &quot;359bad68-b439-4611-b947-78d94d922c08&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+}</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2XL0x8ZeBWMVIVNYaaMxvHQ18rw" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -47,39 +60,106 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.App.executor": "Run",
     "Downloaded.Files.Path.Enabled": "false",
+    "JUnit.YatzyResultsCalculatorTests.chanceScoreTests.executor": "Run",
+    "JUnit.YatzyResultsCalculatorTests.fourOfAKindScoreTests.executor": "Run",
+    "JUnit.YatzyResultsCalculatorTests.fullHouseScoreTests.executor": "Run",
+    "JUnit.YatzyResultsCalculatorTests.largeStraightScoreTests.executor": "Run",
+    "JUnit.YatzyResultsCalculatorTests.onePairScoreTests.executor": "Run",
+    "JUnit.YatzyResultsCalculatorTests.smallStraightScoreTests.executor": "Run",
+    "JUnit.YatzyResultsCalculatorTests.threeOfAKindScoreTests.executor": "Run",
+    "JUnit.YatzyResultsCalculatorTests.twoPairScoreTests.executor": "Run",
+    "JUnit.YatzyResultsCalculatorTests.upperSectionScoreTests.executor": "Run",
+    "JUnit.YatzyResultsCalculatorTests.yatzyScoreTests.executor": "Run",
     "Repository.Attach.Annotations": "true",
     "Repository.Attach.JavaDocs": "true",
     "Repository.Attach.Sources": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2"
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "configurable.group.build"
   }
 }]]></component>
-  <component name="RunManager">
-    <configuration name="YatzyResultsCalculatorTests.upperSectionScoreTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.App">
+    <configuration name="App" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="gui.YatzyApp" />
       <module name="Yatzy" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="YatzyTests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="YatzyResultsCalculatorTests.chanceScoreTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Yatzy" />
       <option name="PACKAGE_NAME" value="YatzyTests" />
       <option name="MAIN_CLASS_NAME" value="YatzyTests.YatzyResultsCalculatorTests" />
-      <option name="METHOD_NAME" value="upperSectionScoreTests" />
+      <option name="METHOD_NAME" value="chanceScoreTests" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="YatzyResultsCalculatorTests.fullHouseScoreTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Yatzy" />
+      <option name="PACKAGE_NAME" value="YatzyTests" />
+      <option name="MAIN_CLASS_NAME" value="YatzyTests.YatzyResultsCalculatorTests" />
+      <option name="METHOD_NAME" value="fullHouseScoreTests" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="YatzyResultsCalculatorTests.largeStraightScoreTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Yatzy" />
+      <option name="PACKAGE_NAME" value="YatzyTests" />
+      <option name="MAIN_CLASS_NAME" value="YatzyTests.YatzyResultsCalculatorTests" />
+      <option name="METHOD_NAME" value="largeStraightScoreTests" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="YatzyResultsCalculatorTests.smallStraightScoreTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Yatzy" />
+      <option name="PACKAGE_NAME" value="YatzyTests" />
+      <option name="MAIN_CLASS_NAME" value="YatzyTests.YatzyResultsCalculatorTests" />
+      <option name="METHOD_NAME" value="smallStraightScoreTests" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="YatzyResultsCalculatorTests.yatzyScoreTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Yatzy" />
+      <option name="PACKAGE_NAME" value="YatzyTests" />
+      <option name="MAIN_CLASS_NAME" value="YatzyTests.YatzyResultsCalculatorTests" />
+      <option name="METHOD_NAME" value="yatzyScoreTests" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.App" />
+      <item itemvalue="JUnit.YatzyResultsCalculatorTests.chanceScoreTests" />
+      <item itemvalue="JUnit.YatzyResultsCalculatorTests.fullHouseScoreTests" />
+      <item itemvalue="JUnit.YatzyResultsCalculatorTests.largeStraightScoreTests" />
+      <item itemvalue="JUnit.YatzyResultsCalculatorTests.smallStraightScoreTests" />
+      <item itemvalue="JUnit.YatzyResultsCalculatorTests.yatzyScoreTests" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.YatzyResultsCalculatorTests.upperSectionScoreTests" />
+        <item itemvalue="JUnit.YatzyResultsCalculatorTests.yatzyScoreTests" />
+        <item itemvalue="JUnit.YatzyResultsCalculatorTests.chanceScoreTests" />
+        <item itemvalue="JUnit.YatzyResultsCalculatorTests.fullHouseScoreTests" />
+        <item itemvalue="JUnit.YatzyResultsCalculatorTests.largeStraightScoreTests" />
+        <item itemvalue="JUnit.YatzyResultsCalculatorTests.smallStraightScoreTests" />
       </list>
     </recent_temporary>
   </component>
@@ -93,5 +173,26 @@
       <updated>1698393299634</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="3" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
